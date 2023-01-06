@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Red Store</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapfs.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" width="125px">
+                </a>
+            </div>
+    
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="productdetails.html">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    
+                </ul>
+            </nav>
+            <a href="cart.html">
+                <img src="images/cart.png" width="28px" height="28px">
+            </a>
+
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Cart Items Details -->
+
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Red Printed T-Shirt</p>
+                            <small>Price: ₹2,999/-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹2,999/-</td>
+            </tr>
+
+            
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>HRX Sports Shoes</p>
+                            <small>Price: ₹1,999/-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹1,999/-</td>
+            </tr>
+
+            
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>Trouser Pant | HRX</p>
+                            <small>Price: ₹999/-</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₹999/-</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₹5,997/-</td>
+                </tr>
+
+                <tr>
+                    <td>Tax</td>
+                    <td>₹3/-</td>
+                </tr>
+
+                <tr>
+                    <td>Delivery Charges</td>
+                    <td>₹0/-</td>
+                </tr>
+
+                <tr>
+                    <td>Total</td>
+                    <td>₹6,000/-</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+
+ <!-------------Footer------------>
+
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>
+                    Download App for Android and ios mobile phone.
+                </p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>
+                   Our purpose Is To Sustainably Make the Pleasure and Benifits of Sports Accessible to the Many.
+                </p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupans</li>
+                    <li>Blog Posts</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliates</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Copyright 2020-Avilash
+        </p>
+    </div>
+ </div>
+ 
+ 
+ <!-- Js for toggle menu -->
+ <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if (MenuItems.style.maxHeight == "0px") 
+            {
+             MenuItems.style.maxHeight = "200px";
+            }
+        else 
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+ </script>
+</body>
+</html>
